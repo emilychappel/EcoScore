@@ -36,59 +36,59 @@ public class Goals {
     }
 
     public double getReduction() {
-//        double tempCalc = user.getCO2Eq();
-//        double temp;
-//        boolean placeholder;
-//        switch(attribute){
-//            case "electric":
-//                temp = user.getElectricBill();
-//                user.setElectricBill(temp-val);
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setElectricBill(temp);
-//            case "gas":
-//                temp = user.getGasBill();
-//                user.setGasBill(temp-val);
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setGasBill(temp);
-//            case "oil":
-//                temp = user.getOilBill();
-//                user.setOilBill(temp-val);
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setOilBill(temp);
-//            case "mileage":
-//                temp = user.getYearlyMileage();
-//                user.setYearlyMileage(temp-val);
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setYearlyMileage(temp);
-//            case "smallFlights":
-//                temp = user.getSmallFlights();
-//                user.setSmallFlights((int) (temp-val));
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setSmallFlights((int) temp);
-//            case "largeFlights":
-//                temp = user.getLargeFlights();
-//                user.setLargeFlights((int) (temp-val));
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setLargeFlights((int) temp);
-//            case "recycle newspaper":
-//                if(val == 1){
-//                    user.setNewspaper(true);
-//                } else {
-//                    user.setNewspaper(false);
-//                }
-//                placeholder = user.isNewspaper();
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setNewspaper(placeholder);
-//            case "recycle aluminum and tin":
-//                if(val == 1){
-//                    user.setAluminumTin(true);
-//                } else {
-//                    user.setAluminumTin(false);
-//                }
-//                placeholder = user.isAluminumTin();
-//                reduction = tempCalc - user.getCO2Eq();
-//                user.setAluminumTin(placeholder);
-//        }
+       double tempCalc = user.getCO2Eq();
+       double temp;
+       boolean placeholder;
+       switch(attribute){
+           case "electric":
+               temp = user.getElectricBill();
+               user.setElectricBill(temp-val);
+               reduction = tempCalc - user.getCO2Eq();
+               user.setElectricBill(temp);
+           case "gas":
+               temp = user.getGasBill();
+               user.setGasBill(temp-val);
+               reduction = tempCalc - user.getCO2Eq();
+               user.setGasBill(temp);
+           case "oil":
+               temp = user.getOilBill();
+               user.setOilBill(temp-val);
+               reduction = tempCalc - user.getCO2Eq();
+               user.setOilBill(temp);
+           case "mileage":
+               temp = user.getYearlyMileage();
+               user.setYearlyMileage(temp-val);
+               reduction = tempCalc - user.getCO2Eq();
+               user.setYearlyMileage(temp);
+           case "smallFlights":
+               temp = user.getSmallFlights();
+               user.setSmallFlights((int) (temp-val));
+               reduction = tempCalc - user.getCO2Eq();
+               user.setSmallFlights((int) temp);
+           case "largeFlights":
+               temp = user.getLargeFlights();
+               user.setLargeFlights((int) (temp-val));
+               reduction = tempCalc - user.getCO2Eq();
+               user.setLargeFlights((int) temp);
+           case "recycle newspaper":
+               if(val == 1){
+                   user.setNewspaper(true);
+               } else {
+                   user.setNewspaper(false);
+               }
+               placeholder = user.isNewspaper();
+               reduction = tempCalc - user.getCO2Eq();
+               user.setNewspaper(placeholder);
+           case "recycle aluminum and tin":
+               if(val == 1){
+                   user.setAluminumTin(true);
+               } else {
+                   user.setAluminumTin(false);
+               }
+               placeholder = user.isAluminumTin();
+               reduction = tempCalc - user.getCO2Eq();
+               user.setAluminumTin(placeholder);
+       }
         return reduction;
     }
 
