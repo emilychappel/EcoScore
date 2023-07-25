@@ -1,0 +1,39 @@
+int input = goalChoice.getSelectedIndex();
+        String attribute = "";
+        switch(input){
+            case 1:
+                attribute = "electric";
+                break;
+            case 2:
+                attribute = "gas";
+                break;
+            case 3:
+                attribute = "oil";
+                break;
+            case 4:
+                attribute = "mileage";
+                break;
+            case 5:
+                attribute = "smallFlights";
+                break;
+            case 6:
+                attribute = "largeFlights";
+                btnLess.setVisible(true);
+                btnAB.setVisible(true);
+                btnBC.setVisible(true);
+                btnMore.setVisible(true);
+                break;
+            case 7:
+                attribute = "recycle newspaper";
+                btnYes.setVisible(true);
+                btnNo.setVisible(true);
+                break;
+            case 8:
+                attribute = "recycle aluminum and tin";
+                btnYes.setVisible(true);
+                btnNo.setVisible(true);
+                break;
+        }
+        Goals goal = new Goals(user);
+        goal.setAttribute(attribute);
+        user.addGoal(goal);
