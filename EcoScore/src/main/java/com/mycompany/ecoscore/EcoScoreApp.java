@@ -9,7 +9,6 @@ import java.awt.*;
 
 // imports class necessary to deal with exceptions
 import java.io.IOException;
-import java.util.Set;
 
 /**
  *
