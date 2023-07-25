@@ -46,6 +46,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
         btnToTab5 = new javax.swing.JButton();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         titleText2 = new javax.swing.JLabel();
@@ -55,56 +56,75 @@ public class EcoScoreApp extends javax.swing.JFrame {
         btnExit = new javax.swing.JButton();
         btnToTab2 = new javax.swing.JButton();
         btnLearnMore = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         titleText4 = new javax.swing.JLabel();
-        inputElectricBill = new javax.swing.JTextField();
         btnToTab3 = new javax.swing.JButton();
-        text4 = new javax.swing.JLabel();
         btnExitTab2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        btnToTab1 = new javax.swing.JButton();
+        radioElectric2 = new javax.swing.JRadioButton();
+        radioElectric1 = new javax.swing.JRadioButton();
+        radioElectric3 = new javax.swing.JRadioButton();
+        radioElectric4 = new javax.swing.JRadioButton();
         jPanel3 = new javax.swing.JPanel();
-        text5 = new javax.swing.JLabel();
-        inputGasBill = new javax.swing.JTextField();
-        btnToTab4 = new javax.swing.JButton();
-        titleText5 = new javax.swing.JLabel();
         btnExitTab3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        titleText5 = new javax.swing.JLabel();
+        radioGas1 = new javax.swing.JRadioButton();
+        radioGas2 = new javax.swing.JRadioButton();
+        radioGas3 = new javax.swing.JRadioButton();
+        radioGas4 = new javax.swing.JRadioButton();
+        btnToTab6 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         titleText7 = new javax.swing.JLabel();
-        text7 = new javax.swing.JLabel();
-        inputGasBill2 = new javax.swing.JTextField();
         btnNextToTab5 = new javax.swing.JButton();
         btnExitTab4 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        btnExitTab6 = new javax.swing.JButton();
+        radioOil1 = new javax.swing.JRadioButton();
+        radioOil2 = new javax.swing.JRadioButton();
+        radioOil3 = new javax.swing.JRadioButton();
+        radioOil4 = new javax.swing.JRadioButton();
         jPanel5 = new javax.swing.JPanel();
         titleText9 = new javax.swing.JLabel();
         text9 = new javax.swing.JLabel();
-        inputGasBill4 = new javax.swing.JTextField();
+        inputMileage = new javax.swing.JTextField();
         btnNextToTab6 = new javax.swing.JButton();
         btnExitOnTab5 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         text10 = new javax.swing.JLabel();
-        inputGasBill5 = new javax.swing.JTextField();
+        inputNumShortFlights = new javax.swing.JTextField();
         btnNextToTab7 = new javax.swing.JButton();
         btnExitOnTab6 = new javax.swing.JButton();
         titleText15 = new javax.swing.JLabel();
         titleText16 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         titleText11 = new javax.swing.JLabel();
         text11 = new javax.swing.JLabel();
-        inputGasBill6 = new javax.swing.JTextField();
+        inputNumLongFlights = new javax.swing.JTextField();
         btnNextToTab8 = new javax.swing.JButton();
         btnExitOnTab7 = new javax.swing.JButton();
         titleText14 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         titleText12 = new javax.swing.JLabel();
         btnNextToTab9 = new javax.swing.JButton();
         btnExitOnTab8 = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        radioYesNewspaper = new javax.swing.JRadioButton();
+        radioNoNewspaper = new javax.swing.JRadioButton();
+        jLabel7 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         btnNextToTab10 = new javax.swing.JButton();
         btnExitOnTab9 = new javax.swing.JButton();
         titleText17 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        radioYesAluminium = new javax.swing.JRadioButton();
+        radioNoAluminium = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         titleText18 = new javax.swing.JLabel();
         btnLearnMore2 = new javax.swing.JButton();
@@ -116,6 +136,17 @@ public class EcoScoreApp extends javax.swing.JFrame {
         titleText20 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         titleText21 = new javax.swing.JLabel();
+        jScrollBar1 = new javax.swing.JScrollBar();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
 
         titleText6.setFont(new java.awt.Font("Arial Hebrew Scholar", 1, 36)); // NOI18N
         titleText6.setText("What is your monthly gas bill?");
@@ -159,8 +190,10 @@ public class EcoScoreApp extends javax.swing.JFrame {
         titleText3.setFont(new java.awt.Font("Impact", 0, 56)); // NOI18N
         titleText3.setText("CARBON FOOTPRINT?");
 
+        label2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         label2.setText("Our world is in crisis, and it's up to all of us to fix it. Take your first step");
 
+        label3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         label3.setText("with our carbon footprint calculator.");
 
         btnExit.setBackground(new java.awt.Color(250, 91, 60));
@@ -193,6 +226,10 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageBannerTab1.jpeg"))); // NOI18N
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageHeartTab1.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -202,22 +239,32 @@ public class EcoScoreApp extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnExit)
                     .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(titleText3)
-                    .addComponent(titleText2)
-                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnToTab2)
                         .addGap(18, 18, 18)
-                        .addComponent(btnLearnMore)))
+                        .addComponent(btnLearnMore))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(titleText3)
+                            .addComponent(titleText2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel9)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel10)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(titleText2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(titleText3)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(titleText2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(titleText3))
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(label2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -226,9 +273,10 @@ public class EcoScoreApp extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnToTab2)
                     .addComponent(btnLearnMore))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnExit)
-                .addGap(28, 28, 28))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(jLabel10))
         );
 
         jTabbedPane1.addTab("tab1", jPanel1);
@@ -236,14 +284,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(150, 194, 43));
 
         titleText4.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
-        titleText4.setText("What is your monthly electric bill?");
-
-        inputElectricBill.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        inputElectricBill.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputElectricBillActionPerformed(evt);
-            }
-        });
+        titleText4.setText("What is your average monthly electric bill?");
 
         btnToTab3.setBackground(new java.awt.Color(5, 102, 8));
         btnToTab3.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
@@ -255,8 +296,6 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
-        text4.setText("Please enter an integer");
-
         btnExitTab2.setBackground(new java.awt.Color(250, 91, 60));
         btnExitTab2.setFont(new java.awt.Font("Avenir Next Condensed", 0, 18)); // NOI18N
         btnExitTab2.setForeground(new java.awt.Color(255, 255, 255));
@@ -267,38 +306,106 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab2.jpg"))); // NOI18N
+
+        btnToTab1.setBackground(new java.awt.Color(2, 138, 15));
+        btnToTab1.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
+        btnToTab1.setForeground(new java.awt.Color(240, 240, 240));
+        btnToTab1.setText("BACK");
+        btnToTab1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToTab1ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioElectric2);
+        radioElectric2.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioElectric2.setText("$50 - $100");
+        radioElectric2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioElectric2ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioElectric1);
+        radioElectric1.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioElectric1.setText("Less than $50");
+        radioElectric1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioElectric1ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioElectric3);
+        radioElectric3.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioElectric3.setText("$100 - $200");
+        radioElectric3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioElectric3ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioElectric4);
+        radioElectric4.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioElectric4.setText("More than $200");
+        radioElectric4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioElectric4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 80, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(radioElectric2)
+                    .addComponent(radioElectric1)
+                    .addComponent(radioElectric3)
+                    .addComponent(radioElectric4)
+                    .addComponent(btnToTab1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnToTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(320, 320, 320))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27))))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(btnExitTab2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(text4)
-                            .addComponent(titleText4)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(inputElectricBill, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(37, 37, 37)
-                                .addComponent(btnToTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(57, 57, 57)
+                        .addComponent(titleText4)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(35, 35, 35)
                 .addComponent(titleText4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 377, Short.MAX_VALUE)
-                .addComponent(text4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(26, 26, 26)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(radioElectric1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radioElectric2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radioElectric3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radioElectric4)
+                        .addGap(20, 20, 20)))
+                .addGap(29, 29, 29)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputElectricBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnToTab1)
                     .addComponent(btnToTab3))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
                 .addComponent(btnExitTab2)
                 .addContainerGap())
         );
@@ -306,28 +413,6 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jTabbedPane1.addTab("tab2", jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(150, 194, 43));
-
-        text5.setText("Please enter an integer");
-
-        inputGasBill.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        inputGasBill.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputGasBillActionPerformed(evt);
-            }
-        });
-
-        btnToTab4.setBackground(new java.awt.Color(5, 102, 8));
-        btnToTab4.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
-        btnToTab4.setForeground(new java.awt.Color(240, 240, 240));
-        btnToTab4.setText("NEXT");
-        btnToTab4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnToTab4ActionPerformed(evt);
-            }
-        });
-
-        titleText5.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
-        titleText5.setText("What is your monthly gas bill?");
 
         btnExitTab3.setBackground(new java.awt.Color(250, 91, 60));
         btnExitTab3.setFont(new java.awt.Font("Avenir Next Condensed", 0, 18)); // NOI18N
@@ -339,47 +424,105 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab3.jpeg"))); // NOI18N
+
+        titleText5.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
+        titleText5.setText("What is your average monthly gas bill?");
+
+        buttonGroup3.add(radioGas1);
+        radioGas1.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioGas1.setText("Less than $50");
+        radioGas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioGas1ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioGas2);
+        radioGas2.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioGas2.setText("$50 - $100");
+        radioGas2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioGas2ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioGas3);
+        radioGas3.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioGas3.setText("$100 - $200");
+        radioGas3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioGas3ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioGas4);
+        radioGas4.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioGas4.setText("More than $200");
+        radioGas4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioGas4ActionPerformed(evt);
+            }
+        });
+
+        btnToTab6.setBackground(new java.awt.Color(5, 102, 8));
+        btnToTab6.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
+        btnToTab6.setForeground(new java.awt.Color(240, 240, 240));
+        btnToTab6.setText("NEXT");
+        btnToTab6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToTab6ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(59, 59, 59)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(btnExitTab3))
+                        .addComponent(titleText5)
+                        .addContainerGap())
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(titleText5)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGap(82, 82, 82)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(text5)
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(inputGasBill, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(37, 37, 37)
-                            .addComponent(btnToTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnToTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(radioGas2)
+                                .addComponent(radioGas1)
+                                .addComponent(radioGas3)
+                                .addComponent(radioGas4)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(btnExitTab3)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(27, 27, 27)
                 .addComponent(titleText5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(radioGas1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radioGas2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radioGas3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radioGas4))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addComponent(btnToTab6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
                 .addComponent(btnExitTab3)
                 .addContainerGap())
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(text5)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(inputGasBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnToTab4))
-                    .addGap(64, 64, 64)))
         );
 
         jTabbedPane1.addTab("tab3", jPanel3);
@@ -387,16 +530,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(150, 194, 43));
 
         titleText7.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
-        titleText7.setText("What is your monthly oil bill?");
-
-        text7.setText("Please enter an integer");
-
-        inputGasBill2.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        inputGasBill2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputGasBill2ActionPerformed(evt);
-            }
-        });
+        titleText7.setText("What is your average monthly oil bill?");
 
         btnNextToTab5.setBackground(new java.awt.Color(5, 102, 8));
         btnNextToTab5.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
@@ -418,6 +552,89 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab4.jpeg"))); // NOI18N
+
+        jPanel14.setBackground(new java.awt.Color(150, 194, 43));
+
+        btnExitTab6.setBackground(new java.awt.Color(250, 91, 60));
+        btnExitTab6.setFont(new java.awt.Font("Avenir Next Condensed", 0, 18)); // NOI18N
+        btnExitTab6.setForeground(new java.awt.Color(255, 255, 255));
+        btnExitTab6.setText("EXIT");
+        btnExitTab6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitTab6ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioOil1);
+        radioOil1.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioOil1.setText("Less than $50");
+        radioOil1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioOil1ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioOil2);
+        radioOil2.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioOil2.setText("$50 - $100");
+        radioOil2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioOil2ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioOil3);
+        radioOil3.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioOil3.setText("$100 - $200");
+        radioOil3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioOil3ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup3.add(radioOil4);
+        radioOil4.setFont(new java.awt.Font("Avenir", 1, 36)); // NOI18N
+        radioOil4.setText("More than $200");
+        radioOil4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioOil4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(59, 59, 59)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(radioOil2)
+                    .addComponent(radioOil1)
+                    .addComponent(radioOil3)
+                    .addComponent(radioOil4))
+                .addGap(0, 451, Short.MAX_VALUE))
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(btnExitTab6)
+                .addContainerGap())
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addComponent(radioOil1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(radioOil2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(radioOil3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(radioOil4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 209, Short.MAX_VALUE)
+                .addComponent(btnExitTab6)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -425,33 +642,41 @@ public class EcoScoreApp extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(98, 98, 98)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(inputGasBill2, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnNextToTab5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(text7)
-                            .addComponent(titleText7)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
-                        .addComponent(btnExitTab4)))
-                .addContainerGap(166, Short.MAX_VALUE))
+                        .addComponent(btnExitTab4))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(titleText7)))
+                .addContainerGap(132, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnNextToTab5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(95, 95, 95))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(titleText7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 359, Short.MAX_VALUE)
-                .addComponent(text7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputGasBill2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnNextToTab5))
-                .addGap(33, 33, 33)
+                .addGap(41, 41, 41)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnNextToTab5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addComponent(btnExitTab4)
                 .addContainerGap())
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("tab4", jPanel4);
@@ -459,14 +684,14 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(150, 194, 43));
 
         titleText9.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
-        titleText9.setText("What is the yearly mileage on your car?");
+        titleText9.setText("What is the average yearly mileage on your car?");
 
         text9.setText("Please enter an integer");
 
-        inputGasBill4.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        inputGasBill4.addActionListener(new java.awt.event.ActionListener() {
+        inputMileage.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        inputMileage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputGasBill4ActionPerformed(evt);
+                inputMileageActionPerformed(evt);
             }
         });
 
@@ -490,6 +715,8 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab5.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -497,34 +724,36 @@ public class EcoScoreApp extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(98, 98, 98)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(inputGasBill4, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnNextToTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(text9)))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(btnExitOnTab5)))
-                        .addGap(0, 160, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(titleText9, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                                .addComponent(inputMileage, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnNextToTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(text9)))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(btnExitOnTab5))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabel4))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(titleText9, javax.swing.GroupLayout.PREFERRED_SIZE, 736, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(23, 23, 23)
                 .addComponent(titleText9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 362, Short.MAX_VALUE)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addComponent(text9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputGasBill4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inputMileage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnNextToTab6))
                 .addGap(33, 33, 33)
                 .addComponent(btnExitOnTab5)
@@ -537,10 +766,10 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
         text10.setText("Please enter an integer");
 
-        inputGasBill5.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        inputGasBill5.addActionListener(new java.awt.event.ActionListener() {
+        inputNumShortFlights.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        inputNumShortFlights.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputGasBill5ActionPerformed(evt);
+                inputNumShortFlightsActionPerformed(evt);
             }
         });
 
@@ -570,45 +799,50 @@ public class EcoScoreApp extends javax.swing.JFrame {
         titleText16.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
         titleText16.setText("been on in the past year?");
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab6.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(0, 117, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(titleText16, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titleText15, javax.swing.GroupLayout.PREFERRED_SIZE, 574, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(98, 98, 98))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(98, 98, 98)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(inputGasBill5, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnNextToTab7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(text10)))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(btnExitOnTab6)))
-                        .addGap(0, 160, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(titleText15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(titleText16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
+                                .addComponent(inputNumShortFlights, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnNextToTab7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(text10)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(btnExitOnTab6))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(titleText15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(titleText16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 322, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(text10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputGasBill5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inputNumShortFlights, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnNextToTab7))
                 .addGap(33, 33, 33)
                 .addComponent(btnExitOnTab6)
@@ -624,10 +858,10 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
         text11.setText("Please enter an integer");
 
-        inputGasBill6.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        inputGasBill6.addActionListener(new java.awt.event.ActionListener() {
+        inputNumLongFlights.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        inputNumLongFlights.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputGasBill6ActionPerformed(evt);
+                inputNumLongFlightsActionPerformed(evt);
             }
         });
 
@@ -654,17 +888,23 @@ public class EcoScoreApp extends javax.swing.JFrame {
         titleText14.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
         titleText14.setText("How many flights >4 hours have you ");
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab7.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(122, 122, 122)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(98, 98, 98)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(inputGasBill6, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(inputNumLongFlights, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnNextToTab8, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(text11)))
@@ -672,25 +912,27 @@ public class EcoScoreApp extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(btnExitOnTab7))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 78, Short.MAX_VALUE)
                         .addComponent(titleText14, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(titleText11, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(24, 24, 24)
                 .addComponent(titleText14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(titleText11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 304, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(text11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputGasBill6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inputNumLongFlights, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnNextToTab8))
                 .addGap(33, 33, 33)
                 .addComponent(btnExitOnTab7)
@@ -724,11 +966,20 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("Yes");
+        buttonGroup1.add(radioYesNewspaper);
+        radioYesNewspaper.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        radioYesNewspaper.setText("Yes");
+        radioYesNewspaper.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioYesNewspaperActionPerformed(evt);
+            }
+        });
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("No");
+        buttonGroup1.add(radioNoNewspaper);
+        radioNoNewspaper.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        radioNoNewspaper.setText("No");
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab8.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -736,38 +987,47 @@ public class EcoScoreApp extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGap(0, 78, Short.MAX_VALUE)
+                        .addComponent(titleText12, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addGap(489, 489, 489)
-                                .addComponent(btnNextToTab9, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel8Layout.createSequentialGroup()
                                 .addGap(38, 38, 38)
-                                .addComponent(btnExitOnTab8)))
-                        .addGap(0, 160, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(titleText12, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnExitOnTab8))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel8Layout.createSequentialGroup()
+                                        .addGap(104, 104, 104)
+                                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(radioYesNewspaper)
+                                            .addComponent(radioNoNewspaper))
+                                        .addGap(67, 67, 67))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent(btnNextToTab9, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)))
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(220, 220, 220)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(titleText12)
-                .addGap(102, 102, 102)
-                .addComponent(jRadioButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
-                .addComponent(btnNextToTab9)
-                .addGap(33, 33, 33)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(titleText12)
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(radioYesNewspaper)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(radioNoNewspaper)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnNextToTab9)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
                 .addComponent(btnExitOnTab8)
                 .addContainerGap())
         );
@@ -797,55 +1057,54 @@ public class EcoScoreApp extends javax.swing.JFrame {
         });
 
         titleText17.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
-        titleText17.setText("Do you recycle aluminium?");
+        titleText17.setText("Do you recycle aluminium and tin?");
 
-        buttonGroup2.add(jRadioButton3);
-        jRadioButton3.setText("Yes");
+        buttonGroup2.add(radioYesAluminium);
+        radioYesAluminium.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        radioYesAluminium.setText("Yes");
 
-        buttonGroup2.add(jRadioButton4);
-        jRadioButton4.setText("No");
+        buttonGroup2.add(radioNoAluminium);
+        radioNoAluminium.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        radioNoAluminium.setText("No");
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab9.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(btnExitOnTab9))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(489, 489, 489)
-                        .addComponent(btnNextToTab10, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(titleText17, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(138, Short.MAX_VALUE))
-            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel9Layout.createSequentialGroup()
-                    .addGap(352, 352, 352)
+                .addGap(38, 38, 38)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnNextToTab10, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jRadioButton4)
-                        .addComponent(jRadioButton3))
-                    .addContainerGap(352, Short.MAX_VALUE)))
+                        .addComponent(titleText17, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnExitOnTab9)
+                        .addGroup(jPanel9Layout.createSequentialGroup()
+                            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(radioNoAluminium)
+                                .addComponent(radioYesAluminium))
+                            .addGap(60, 60, 60)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(titleText17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 393, Short.MAX_VALUE)
+                .addGap(44, 44, 44)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(radioYesAluminium)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(radioNoAluminium)))
+                .addGap(18, 18, 18)
                 .addComponent(btnNextToTab10)
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
                 .addComponent(btnExitOnTab9)
                 .addContainerGap())
-            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel9Layout.createSequentialGroup()
-                    .addGap(263, 263, 263)
-                    .addComponent(jRadioButton3)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(jRadioButton4)
-                    .addContainerGap(263, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("tab9", jPanel9);
@@ -890,7 +1149,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addContainerGap(137, Short.MAX_VALUE)
+                .addContainerGap(177, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(btnToTab11)
@@ -906,7 +1165,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(titleText18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 419, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 455, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLearnMore2)
                     .addComponent(btnToTab12)
@@ -926,16 +1185,16 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(196, Short.MAX_VALUE)
-                .addComponent(titleText19, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
+                .addContainerGap(236, Short.MAX_VALUE)
+                .addComponent(titleText19, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(titleText19)
-                .addContainerGap(510, Short.MAX_VALUE))
+                .addContainerGap(546, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab11", jPanel11);
@@ -950,7 +1209,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                .addContainerGap(196, Short.MAX_VALUE)
+                .addContainerGap(236, Short.MAX_VALUE)
                 .addComponent(titleText20, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(105, 105, 105))
         );
@@ -959,7 +1218,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(titleText20)
-                .addContainerGap(510, Short.MAX_VALUE))
+                .addContainerGap(546, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab12", jPanel12);
@@ -967,23 +1226,86 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jPanel13.setBackground(new java.awt.Color(150, 194, 43));
 
         titleText21.setFont(new java.awt.Font("Bangla Sangam MN", 1, 36)); // NOI18N
-        titleText21.setText("Learn more!");
+        titleText21.setText("Learn more about our planet!");
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image3Tab13.jpeg"))); // NOI18N
+
+        jLabel12.setText("How to Save Our Planet — WWF International");
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Image1Tab13.jpeg"))); // NOI18N
+
+        jLabel14.setText("\"Thriving for the long term\": Sustainability done");
+
+        jLabel15.setText("simply — UBC Magazine");
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image2Tab13.jpeg"))); // NOI18N
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image4Tab13.jpeg"))); // NOI18N
+
+        jLabel18.setText("Preventing Plastic Pollution — Greenpeace");
+
+        jLabel19.setText("To Confront Climate Change, the Modern Automobile");
+
+        jLabel20.setText("Must Die — WIRED");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                .addContainerGap(196, Short.MAX_VALUE)
-                .addComponent(titleText21, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(titleText21, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel18))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
+                                .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE))
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel20))
+                        .addGap(86, 86, 86)))
+                .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 610, Short.MAX_VALUE)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addGap(20, 20, 20)
                 .addComponent(titleText21)
-                .addContainerGap(510, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel14)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel15)
+                .addGap(37, 37, 37)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(jLabel19))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel20)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab13", jPanel13);
@@ -994,12 +1316,13 @@ public class EcoScoreApp extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1)
-                .addContainerGap())
+                .addComponent(jTabbedPane1))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 641, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -1037,9 +1360,9 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jTabbedPane1.setSelectedIndex(7);
     }//GEN-LAST:event_btnNextToTab8ActionPerformed
 
-    private void inputGasBill6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputGasBill6ActionPerformed
+    private void inputNumLongFlightsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputNumLongFlightsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inputGasBill6ActionPerformed
+    }//GEN-LAST:event_inputNumLongFlightsActionPerformed
 
     private void btnExitOnTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab6ActionPerformed
         // TODO add your handling code here:
@@ -1051,9 +1374,9 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jTabbedPane1.setSelectedIndex(6);
     }//GEN-LAST:event_btnNextToTab7ActionPerformed
 
-    private void inputGasBill5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputGasBill5ActionPerformed
+    private void inputNumShortFlightsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputNumShortFlightsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inputGasBill5ActionPerformed
+    }//GEN-LAST:event_inputNumShortFlightsActionPerformed
 
     private void btnExitOnTab5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab5ActionPerformed
         // TODO add your handling code here:
@@ -1065,9 +1388,9 @@ public class EcoScoreApp extends javax.swing.JFrame {
         jTabbedPane1.setSelectedIndex(5);
     }//GEN-LAST:event_btnNextToTab6ActionPerformed
 
-    private void inputGasBill4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputGasBill4ActionPerformed
+    private void inputMileageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputMileageActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inputGasBill4ActionPerformed
+    }//GEN-LAST:event_inputMileageActionPerformed
 
     private void btnExitTab4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab4ActionPerformed
         // TODO add your handling code here:
@@ -1078,57 +1401,6 @@ public class EcoScoreApp extends javax.swing.JFrame {
         
         jTabbedPane1.setSelectedIndex(4);
     }//GEN-LAST:event_btnNextToTab5ActionPerformed
-
-    private void inputGasBill2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputGasBill2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_inputGasBill2ActionPerformed
-
-    private void btnExitTab3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab3ActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btnExitTab3ActionPerformed
-
-    private void btnToTab4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab4ActionPerformed
-        // TODO add your handling code here:
-        
-        jTabbedPane1.setSelectedIndex(3);
-    }//GEN-LAST:event_btnToTab4ActionPerformed
-
-    private void inputGasBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputGasBillActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_inputGasBillActionPerformed
-
-    private void btnExitTab2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab2ActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btnExitTab2ActionPerformed
-
-    private void btnToTab3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab3ActionPerformed
-        // TODO add your handling code here:
-
-        jTabbedPane1.setSelectedIndex(2);
-    }//GEN-LAST:event_btnToTab3ActionPerformed
-
-    private void inputElectricBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputElectricBillActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_inputElectricBillActionPerformed
-
-    private void btnLearnMoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLearnMoreActionPerformed
-        // TODO add your handling code here:
-
-        jTabbedPane1.setSelectedIndex(12);
-    }//GEN-LAST:event_btnLearnMoreActionPerformed
-
-    private void btnToTab2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab2ActionPerformed
-        // TODO add your handling code here:
-
-        jTabbedPane1.setSelectedIndex(1);
-    }//GEN-LAST:event_btnToTab2ActionPerformed
-
-    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnExitOnTab9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab9ActionPerformed
         // TODO add your handling code here:
@@ -1159,6 +1431,107 @@ public class EcoScoreApp extends javax.swing.JFrame {
         
         jTabbedPane1.setSelectedIndex(10);
     }//GEN-LAST:event_btnToTab11ActionPerformed
+
+    private void radioYesNewspaperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioYesNewspaperActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioYesNewspaperActionPerformed
+
+    private void btnLearnMoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLearnMoreActionPerformed
+        // TODO add your handling code here:
+
+        jTabbedPane1.setSelectedIndex(12);
+    }//GEN-LAST:event_btnLearnMoreActionPerformed
+
+    private void btnToTab2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab2ActionPerformed
+        // TODO add your handling code here:
+
+        jTabbedPane1.setSelectedIndex(1);
+    }//GEN-LAST:event_btnToTab2ActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnExitTab2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab2ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnExitTab2ActionPerformed
+
+    private void btnToTab3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab3ActionPerformed
+        // TODO add your handling code here:
+
+        jTabbedPane1.setSelectedIndex(2);
+    }//GEN-LAST:event_btnToTab3ActionPerformed
+
+    private void btnToTab1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab1ActionPerformed
+        // TODO add your handling code here:
+        
+        jTabbedPane1.setSelectedIndex(0);
+    }//GEN-LAST:event_btnToTab1ActionPerformed
+
+    private void radioElectric2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioElectric2ActionPerformed
+
+    private void radioElectric1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioElectric1ActionPerformed
+
+    private void radioElectric3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioElectric3ActionPerformed
+
+    private void radioElectric4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioElectric4ActionPerformed
+
+    private void btnExitTab3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab3ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnExitTab3ActionPerformed
+
+    private void radioGas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioGas1ActionPerformed
+
+    private void radioGas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioGas2ActionPerformed
+
+    private void radioGas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioGas3ActionPerformed
+
+    private void radioGas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioGas4ActionPerformed
+
+    private void btnToTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab6ActionPerformed
+        // TODO add your handling code here:
+        
+        jTabbedPane1.setSelectedIndex(5);
+    }//GEN-LAST:event_btnToTab6ActionPerformed
+
+    private void btnExitTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExitTab6ActionPerformed
+
+    private void radioOil1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioOil1ActionPerformed
+
+    private void radioOil2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioOil2ActionPerformed
+
+    private void radioOil3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioOil3ActionPerformed
+
+    private void radioOil4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioOil4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1206,6 +1579,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
     private javax.swing.JButton btnExitTab3;
     private javax.swing.JButton btnExitTab4;
     private javax.swing.JButton btnExitTab5;
+    private javax.swing.JButton btnExitTab6;
     private javax.swing.JButton btnLearnMore;
     private javax.swing.JButton btnLearnMore2;
     private javax.swing.JButton btnNextToTab10;
@@ -1214,26 +1588,46 @@ public class EcoScoreApp extends javax.swing.JFrame {
     private javax.swing.JButton btnNextToTab7;
     private javax.swing.JButton btnNextToTab8;
     private javax.swing.JButton btnNextToTab9;
+    private javax.swing.JButton btnToTab1;
     private javax.swing.JButton btnToTab11;
     private javax.swing.JButton btnToTab12;
     private javax.swing.JButton btnToTab2;
     private javax.swing.JButton btnToTab3;
-    private javax.swing.JButton btnToTab4;
     private javax.swing.JButton btnToTab5;
+    private javax.swing.JButton btnToTab6;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JTextField inputElectricBill;
-    private javax.swing.JTextField inputGasBill;
+    private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.JTextField inputGasBill1;
-    private javax.swing.JTextField inputGasBill2;
-    private javax.swing.JTextField inputGasBill4;
-    private javax.swing.JTextField inputGasBill5;
-    private javax.swing.JTextField inputGasBill6;
+    private javax.swing.JTextField inputMileage;
+    private javax.swing.JTextField inputNumLongFlights;
+    private javax.swing.JTextField inputNumShortFlights;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1242,19 +1636,29 @@ public class EcoScoreApp extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel label2;
     private javax.swing.JLabel label3;
+    private javax.swing.JRadioButton radioElectric1;
+    private javax.swing.JRadioButton radioElectric2;
+    private javax.swing.JRadioButton radioElectric3;
+    private javax.swing.JRadioButton radioElectric4;
+    private javax.swing.JRadioButton radioGas1;
+    private javax.swing.JRadioButton radioGas2;
+    private javax.swing.JRadioButton radioGas3;
+    private javax.swing.JRadioButton radioGas4;
+    private javax.swing.JRadioButton radioNoAluminium;
+    private javax.swing.JRadioButton radioNoNewspaper;
+    private javax.swing.JRadioButton radioOil1;
+    private javax.swing.JRadioButton radioOil2;
+    private javax.swing.JRadioButton radioOil3;
+    private javax.swing.JRadioButton radioOil4;
+    private javax.swing.JRadioButton radioYesAluminium;
+    private javax.swing.JRadioButton radioYesNewspaper;
     private javax.swing.JLabel text10;
     private javax.swing.JLabel text11;
-    private javax.swing.JLabel text4;
-    private javax.swing.JLabel text5;
     private javax.swing.JLabel text6;
-    private javax.swing.JLabel text7;
     private javax.swing.JLabel text9;
     private javax.swing.JLabel titleText11;
     private javax.swing.JLabel titleText12;
