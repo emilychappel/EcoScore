@@ -9,13 +9,14 @@ import java.awt.*;
 
 // imports class necessary to deal with exceptions
 import java.io.IOException;
+import java.util.Set;
 
 /**
  *
  * @author emilychappel
  */
 public class EcoScoreApp extends javax.swing.JFrame {
-    
+    Users user = new Users();
     // custom method to scale image
     private ImageIcon scaleImage(ImageIcon originalIcon, int scaledWidth, int scaledHeight) {
         Image image = originalIcon.getImage();
@@ -76,7 +77,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
         radioGas2 = new javax.swing.JRadioButton();
         radioGas3 = new javax.swing.JRadioButton();
         radioGas4 = new javax.swing.JRadioButton();
-        btnToTab6 = new javax.swing.JButton();
+        btnToTab4 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         titleText7 = new javax.swing.JLabel();
         btnNextToTab5 = new javax.swing.JButton();
@@ -130,6 +131,10 @@ public class EcoScoreApp extends javax.swing.JFrame {
         btnLearnMore2 = new javax.swing.JButton();
         btnToTab12 = new javax.swing.JButton();
         btnToTab11 = new javax.swing.JButton();
+        txtResults = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        txtCO2eq = new javax.swing.JTextField();
         jPanel11 = new javax.swing.JPanel();
         titleText19 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
@@ -465,13 +470,13 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
-        btnToTab6.setBackground(new java.awt.Color(5, 102, 8));
-        btnToTab6.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
-        btnToTab6.setForeground(new java.awt.Color(240, 240, 240));
-        btnToTab6.setText("NEXT");
-        btnToTab6.addActionListener(new java.awt.event.ActionListener() {
+        btnToTab4.setBackground(new java.awt.Color(5, 102, 8));
+        btnToTab4.setFont(new java.awt.Font("Avenir Next Condensed", 0, 24)); // NOI18N
+        btnToTab4.setForeground(new java.awt.Color(240, 240, 240));
+        btnToTab4.setText("NEXT");
+        btnToTab4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnToTab6ActionPerformed(evt);
+                btnToTab4ActionPerformed(evt);
             }
         });
 
@@ -487,7 +492,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnToTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnToTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(radioGas2)
                                 .addComponent(radioGas1)
@@ -519,7 +524,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(10, 10, 10)
-                .addComponent(btnToTab6)
+                .addComponent(btnToTab4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
                 .addComponent(btnExitTab3)
                 .addContainerGap())
@@ -978,6 +983,11 @@ public class EcoScoreApp extends javax.swing.JFrame {
         buttonGroup1.add(radioNoNewspaper);
         radioNoNewspaper.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         radioNoNewspaper.setText("No");
+        radioNoNewspaper.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioNoNewspaperActionPerformed(evt);
+            }
+        });
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab8.jpg"))); // NOI18N
 
@@ -1062,10 +1072,20 @@ public class EcoScoreApp extends javax.swing.JFrame {
         buttonGroup2.add(radioYesAluminium);
         radioYesAluminium.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         radioYesAluminium.setText("Yes");
+        radioYesAluminium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioYesAluminiumActionPerformed(evt);
+            }
+        });
 
         buttonGroup2.add(radioNoAluminium);
         radioNoAluminium.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         radioNoAluminium.setText("No");
+        radioNoAluminium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioNoAluminiumActionPerformed(evt);
+            }
+        });
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imageTab9.jpeg"))); // NOI18N
 
@@ -1144,6 +1164,15 @@ public class EcoScoreApp extends javax.swing.JFrame {
             }
         });
 
+        txtResults.setEditable(false);
+
+        jLabel21.setText("Pounds of CO2:");
+
+        jLabel22.setText("CO2-eq:");
+
+        txtCO2eq.setEditable(false);
+        txtCO2eq.setToolTipText("");
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -1151,13 +1180,22 @@ public class EcoScoreApp extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                 .addContainerGap(177, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(titleText18, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(btnToTab11)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnToTab11)
+                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel22)
+                                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
-                        .addComponent(btnToTab12, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnLearnMore2))
-                    .addComponent(titleText18, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addComponent(btnToTab12, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnLearnMore2))
+                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(txtCO2eq, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtResults, javax.swing.GroupLayout.Alignment.LEADING)))))
                 .addGap(57, 57, 57))
         );
         jPanel10Layout.setVerticalGroup(
@@ -1165,7 +1203,15 @@ public class EcoScoreApp extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(titleText18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 455, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtResults, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCO2eq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 363, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLearnMore2)
                     .addComponent(btnToTab12)
@@ -1342,6 +1388,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void btnExitOnTab8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab8ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnExitOnTab8ActionPerformed
 
     private void btnNextToTab9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextToTab9ActionPerformed
@@ -1352,11 +1399,13 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void btnExitOnTab7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab7ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnExitOnTab7ActionPerformed
 
     private void btnNextToTab8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextToTab8ActionPerformed
         // TODO add your handling code here:
-        
+        int flights = Integer.parseInt(inputNumLongFlights.getText());
+        user.setLargeFlights(flights);
         jTabbedPane1.setSelectedIndex(7);
     }//GEN-LAST:event_btnNextToTab8ActionPerformed
 
@@ -1366,11 +1415,13 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void btnExitOnTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab6ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnExitOnTab6ActionPerformed
 
     private void btnNextToTab7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextToTab7ActionPerformed
         // TODO add your handling code here:
-        
+        int flights = Integer.parseInt(inputNumShortFlights.getText());
+        user.setSmallFlights(flights);
         jTabbedPane1.setSelectedIndex(6);
     }//GEN-LAST:event_btnNextToTab7ActionPerformed
 
@@ -1380,11 +1431,13 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void btnExitOnTab5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitOnTab5ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnExitOnTab5ActionPerformed
 
     private void btnNextToTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextToTab6ActionPerformed
         // TODO add your handling code here:
-        
+        double mileage = Double.parseDouble(inputMileage.getText());
+        user.setYearlyMileage(mileage);
         jTabbedPane1.setSelectedIndex(5);
     }//GEN-LAST:event_btnNextToTab6ActionPerformed
 
@@ -1394,11 +1447,11 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void btnExitTab4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab4ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnExitTab4ActionPerformed
 
     private void btnNextToTab5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextToTab5ActionPerformed
         // TODO add your handling code here:
-        
         jTabbedPane1.setSelectedIndex(4);
     }//GEN-LAST:event_btnNextToTab5ActionPerformed
 
@@ -1410,7 +1463,9 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void btnNextToTab10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextToTab10ActionPerformed
         // TODO add your handling code here:
-        
+        System.out.println(user.toString());
+        txtResults.setText(user.calculate().toString());
+        txtCO2eq.setText(user.getCO2Eq().toString());
         jTabbedPane1.setSelectedIndex(9);
     }//GEN-LAST:event_btnNextToTab10ActionPerformed
 
@@ -1434,6 +1489,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void radioYesNewspaperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioYesNewspaperActionPerformed
         // TODO add your handling code here:
+        user.setNewspaper(true);
     }//GEN-LAST:event_radioYesNewspaperActionPerformed
 
     private void btnLearnMoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLearnMoreActionPerformed
@@ -1472,18 +1528,22 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void radioElectric2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric2ActionPerformed
         // TODO add your handling code here:
+        user.setElectricBill(25);
     }//GEN-LAST:event_radioElectric2ActionPerformed
 
     private void radioElectric1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric1ActionPerformed
         // TODO add your handling code here:
+        user.setElectricBill(75);
     }//GEN-LAST:event_radioElectric1ActionPerformed
 
     private void radioElectric3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric3ActionPerformed
         // TODO add your handling code here:
+        user.setElectricBill(150);
     }//GEN-LAST:event_radioElectric3ActionPerformed
 
     private void radioElectric4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioElectric4ActionPerformed
         // TODO add your handling code here:
+        user.setElectricBill(250);
     }//GEN-LAST:event_radioElectric4ActionPerformed
 
     private void btnExitTab3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab3ActionPerformed
@@ -1493,25 +1553,29 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void radioGas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas1ActionPerformed
         // TODO add your handling code here:
+        user.setGasBill(25);
     }//GEN-LAST:event_radioGas1ActionPerformed
 
     private void radioGas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas2ActionPerformed
         // TODO add your handling code here:
+        user.setGasBill(75);
     }//GEN-LAST:event_radioGas2ActionPerformed
 
     private void radioGas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas3ActionPerformed
         // TODO add your handling code here:
+        user.setGasBill(150);
     }//GEN-LAST:event_radioGas3ActionPerformed
 
     private void radioGas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioGas4ActionPerformed
         // TODO add your handling code here:
+        user.setGasBill(250);
     }//GEN-LAST:event_radioGas4ActionPerformed
 
-    private void btnToTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab6ActionPerformed
+    private void btnToTab4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToTab4ActionPerformed
         // TODO add your handling code here:
         
-        jTabbedPane1.setSelectedIndex(5);
-    }//GEN-LAST:event_btnToTab6ActionPerformed
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_btnToTab4ActionPerformed
 
     private void btnExitTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitTab6ActionPerformed
         // TODO add your handling code here:
@@ -1519,19 +1583,40 @@ public class EcoScoreApp extends javax.swing.JFrame {
 
     private void radioOil1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil1ActionPerformed
         // TODO add your handling code here:
+        user.setOilBill(25);
+        
     }//GEN-LAST:event_radioOil1ActionPerformed
 
     private void radioOil2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil2ActionPerformed
         // TODO add your handling code here:
+        user.setOilBill(75);
     }//GEN-LAST:event_radioOil2ActionPerformed
 
     private void radioOil3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil3ActionPerformed
         // TODO add your handling code here:
+        user.setOilBill(150);
     }//GEN-LAST:event_radioOil3ActionPerformed
 
     private void radioOil4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioOil4ActionPerformed
         // TODO add your handling code here:
+        user.setOilBill(250);
     }//GEN-LAST:event_radioOil4ActionPerformed
+
+    private void radioNoNewspaperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioNoNewspaperActionPerformed
+        // TODO add your handling code here:
+        user.setNewspaper(false);
+    }//GEN-LAST:event_radioNoNewspaperActionPerformed
+
+    private void radioYesAluminiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioYesAluminiumActionPerformed
+        // TODO add your handling code here:
+        user.setAluminumTin(true);
+        
+    }//GEN-LAST:event_radioYesAluminiumActionPerformed
+
+    private void radioNoAluminiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioNoAluminiumActionPerformed
+        // TODO add your handling code here:
+        user.setAluminumTin(true);
+    }//GEN-LAST:event_radioNoAluminiumActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1593,8 +1678,8 @@ public class EcoScoreApp extends javax.swing.JFrame {
     private javax.swing.JButton btnToTab12;
     private javax.swing.JButton btnToTab2;
     private javax.swing.JButton btnToTab3;
+    private javax.swing.JButton btnToTab4;
     private javax.swing.JButton btnToTab5;
-    private javax.swing.JButton btnToTab6;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
@@ -1615,6 +1700,8 @@ public class EcoScoreApp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1677,5 +1764,7 @@ public class EcoScoreApp extends javax.swing.JFrame {
     private javax.swing.JLabel titleText6;
     private javax.swing.JLabel titleText7;
     private javax.swing.JLabel titleText9;
+    private javax.swing.JTextField txtCO2eq;
+    private javax.swing.JTextField txtResults;
     // End of variables declaration//GEN-END:variables
 }

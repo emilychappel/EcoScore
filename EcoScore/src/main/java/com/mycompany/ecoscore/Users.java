@@ -18,18 +18,6 @@ public class Users {
     private boolean newspaper, aluminumTin;
     ArrayList<ArrayList<Goals>> goals;
 
-    public Users(double electricBill, double gasBill, double oilBill, double yearlyMileage, int smallFlights, int largeFlights, boolean newspaper, boolean aluminumTin, ArrayList<ArrayList<Goals>> goals) {
-        this.electricBill = electricBill;
-        this.gasBill = gasBill;
-        this.oilBill = oilBill;
-        this.yearlyMileage = yearlyMileage;
-        this.smallFlights = smallFlights;
-        this.largeFlights = largeFlights;
-        this.newspaper = newspaper;
-        this.aluminumTin = aluminumTin;
-        this.goals = goals;
-    }
-
     public ArrayList<ArrayList<Goals>> getGoals() {
         return goals;
     }
@@ -103,7 +91,7 @@ public class Users {
         this.goals = goals;
     }
     
-    public double calculate(){
+    public Double calculate(){
         double emissions = electricBill * 105 + gasBill * 105 + oilBill * 112 + yearlyMileage * 0.79 + smallFlights * 1100 + largeFlights * 4400;
         if(newspaper){
             emissions += 184;
@@ -114,7 +102,7 @@ public class Users {
         return emissions;
     }
     
-    public double getCO2Eq(){
+    public Double getCO2Eq(){
         return calculate()/ 2204.62;
     }
     
